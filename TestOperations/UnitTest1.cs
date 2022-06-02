@@ -65,16 +65,16 @@ namespace TestOperations
         [Fact]
         public void div_Interface_test()
         {
-            var subInterfaceObj = new Mock<Ioperation>();
-            subInterfaceObj.Setup(obj => obj.sub(20, 10)).Returns(2);
-            Xunit.Assert.Equal(2, subInterfaceObj.Object.sub(20, 10));
+            var divInterfaceObj = new Mock<Ioperation>();
+            divInterfaceObj.Setup(obj => obj.sub(20, 10)).Returns(2);
+            Xunit.Assert.Equal(2, divInterfaceObj.Object.sub(20, 10));
         }
         [Fact]
         public void mul_Interface_test()
         {
-            var subInterfaceObj = new Mock<Ioperation>();
-            subInterfaceObj.Setup(obj => obj.sub(20, 10)).Returns(200);
-            Xunit.Assert.Equal(200, subInterfaceObj.Object.sub(20, 10));
+            var mulInterfaceObj = new Mock<Ioperation>();
+            mulInterfaceObj.Setup(obj => obj.sub(20, 10)).Returns(200);
+            Xunit.Assert.Equal(200, mulInterfaceObj.Object.sub(20, 10));
         }
 
 
